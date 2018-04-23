@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+	text-align: center;
+	font-family: 'Raleway', cursive;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+h1{
+	font-size: 6vw;
+	margin-bottom: 0;
+}  	
+
+h2{
+	color: #686767;
+}
+
+h3{
+	font-size: 3vw;
+	text-align: left;
+	padding-left: 2vw;
+	margin-bottom: 0;
+}
+
+p{
+	text-align: left;
+	padding-left: 2vw;
+}
+
+h1::selection, h3::selection, p::selection{
+	background-color: pink;
+	color: white;
+}
+
+.parallax {
+    /* Set a specific height */
+    min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navBar{
+	text-align: right;
+}
+
+#body{
+	-webkit-animation: fadein 3s;
+}
+
+#subtitle{
+	text-align: center;
+	padding-bottom: 1vw;
+}
+
+#footer{
+	border-top: 0.1vw solid black;
+	padding-top: 1vw;
+	margin: 0 auto;
+	color: #a8a8a8;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#projects, #aboutMe{
+	text-align: left;
+}
+
+#backToTop{
+	text-align: right;
+}
+
+a.title, a.title:link, a.title:visited{
+	text-decoration:none;
+	user-select: none;
+	color: black;
+}
+
+a.button:link, a.button:visited {
+    color: #a8a8a8;
+    border: 2px solid #a8a8a8;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    -moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    font-family: 'Ubuntu', cursive;
+    margin: 1vw;
+}
+
+
+a.button:hover, a.button:active {
+   border: 2px solid pink;
+   padding: 10px 20px;
+   color: pink;
+}
+
+
+a.backToTop, a.footerLinks:link, a.footerLinks:visited{
+	color:#a8a8a8;
+	text-decoration:none;
+	padding: 2vw;
+	padding-top: 2vw;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    -moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+a.footerLinks:hover {
+	transition-duration: 0.4s;
+	color: pink;
+}
+
+a.backToTop{
+	position: fixed;
+	right: 1.5vw;
+	bottom: 2vw;
+	color: black;
+}
+
+a.backToTop:hover{
+	color: pink;
+	transition-duration: 0.4s;
+}
+
+
+
+
+
