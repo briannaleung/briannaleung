@@ -123,7 +123,7 @@ a.button:hover, a.button:active {
 }
 
 
-a.backToTop, a.footerLinks:link, a.footerLinks:visited{
+a.footerLinks:link, a.footerLinks:visited{
 	color:#a8a8a8;
 	text-decoration:none;
 	padding: 2vw;
@@ -140,18 +140,22 @@ a.title:hover, a.footerLinks:hover {
 	color: pink;
 }
 
-a.backToTop{
+a.backToTop, a.backToTop:active{
 	position: fixed;
-	right: 1.5vw;
+	right: 3vw;
 	bottom: 2vw;
-	color: black;
+	color: #a8a8a8;
+	text-decoration: none;
 }
 
 a.backToTop:hover{
-	color: pink;
+	color: black;
 	transition-duration: 0.4s;
 }
 
+#back{
+	display: none;
+}
 
 
 
