@@ -4,6 +4,7 @@
 body{
 	text-align: center;
 	font-family: 'Raleway', cursive;
+	padding-left: 2vw;
 }
 
 @-webkit-keyframes fadein {
@@ -24,13 +25,11 @@ h2{
 h3{
 	font-size: 3vw;
 	text-align: left;
-	padding-left: 2vw;
 	margin-bottom: 0;
 }
 
 p{
 	text-align: left;
-	padding-left: 2vw;
 }
 
 h1::selection, h3::selection, p::selection{
@@ -83,6 +82,16 @@ h1::selection, h3::selection, p::selection{
 	text-align: right;
 }
 
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#Marmosad{
+	width: 25%;
+}
+
 a.title, a.title:link, a.title:visited{
 	text-decoration:none;
 	user-select: none;
@@ -127,8 +136,8 @@ a.backToTop, a.footerLinks:link, a.footerLinks:visited{
 	user-select: none;
 }
 
-a.footerLinks:hover {
-	transition-duration: 0.4s;
+a.title:hover, a.footerLinks:hover {
+	transition-duration: 0.3s;
 	color: pink;
 }
 

@@ -5,7 +5,16 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
 
+		//button only visible when scrolled down a certain distance
+		function scrollFunction() {
+		    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+		        document.getElementById("backtoTop").style.display = "block";
+		    } else {
+		        document.getElementById("backtoTop").style.display = "none";
+		    }
+		}
 
 		$(document).ready(function(){
         // Have a smooth scrolling when clicking navigation button
@@ -46,6 +55,10 @@
 
 			<div id="projects">
 				<h3>Projects</h3>
+					
+					<img id="Marmosad" src="http://marmosad.me/assets/goose.svg"></img>
+					<p><a class="button" href="http://marmosad.me">Marmosad</a></p>
+					
 				<p> broooooooo you tryna snoop or what?</p>
 			</div>
 			
@@ -74,7 +87,7 @@
 			</div>
 
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<a class= "backToTop" href="#header">Back to Top</a>
+			<a id= "backtoTop" class="backToTop" href="#header">Back to Top</a>
 			
 		</div>
 
