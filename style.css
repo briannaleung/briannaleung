@@ -5,7 +5,14 @@ body{
 	text-align: center;
 	font-family: 'Raleway', cursive;
 	overflow: hidden;
-	position: fixed;
+	background-color: white;
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid grey;
+  margin: 10px;
 }
 
 @-webkit-keyframes fadein {
@@ -68,21 +75,20 @@ h1::selection, h3::selection, p::selection{
 
 #footer{
 	border-top: 0.1vw solid black;
-	padding-top: 1vw;
 	margin: 0 auto;
+	padding-top: 0.5vw;
+	padding-bottom: 1.5vw;
 	color: #a8a8a8;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-webkit-user-select: none;
 	user-select: none;
-	padding-bottom: 1vw;
 	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	width: 95%;
 	text-align: center;
-
 }
 
 a.title, a.title:link, a.title:visited{
