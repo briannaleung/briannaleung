@@ -1,159 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<script type="text/javascript">
-		window.onscroll = function() {scrollFunction()};
+        function showAboutMe(){
+            document.getElementById("aboutMe").style.display = "block";
+            if(document.getElementById("projects").style.display = "block"){
+                document.getElementById("projects").style.display = "none";
+            }
+        }
 
-		//button only visible when scrolled down a certain distance
-		function scrollFunction() {
-		    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-		        document.getElementById("back").style.display = "block";
-		    } else {
-		        document.getElementById("back").style.display = "none";
-		    }
-		}
-
-		$(document).ready(function(){
-        // Have a smooth scrolling when clicking navigation button
-        $('a').on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-            $('html, body').animate({scrollTop:$(hash).offset().top}, 800, function() {
-              window.location.hash = hash;
-            });
-          }
-		});
-      });
+        function showProjects(){
+            document.getElementById("projects").style.display = "block";
+            if(document.getElementById("aboutMe").style.display = "block"){
+                document.getElementById("aboutMe").style.display = "none";
+            }
+        }
 	</script>
 
-	<title>Briannaa</title>
+	<title>Brianna</title>
 	<link rel="shortcut icon" href="http://www.pngmart.com/files/1/Banana-Icon-PNG.png" />
 
 	<body>
-
     <div id="header">
-			<div id="navBar">
-				<a class="button" href="https://ca.linkedin.com/in/brianna-leung-8a517214b">LinkedIn</a>
-				<a class="button" href="http://briannaleung.github.io/May2018.pdf">Resume</a>
-			</div>
-
-			<h1><a class="title" href="#aboutMe">Brianna Leung</a></h1>
-
-			<p id="subtitle">Just a 1B Electrical Engineering student tryna get coop yo.</p>
-		</div>
-
-		<div class="parallax" id="body">
+        <h1><a class="title">Brianna Leung</a></h1>
+        <p id="subtitle">— A 1B Electrical Engineering student looking for some experience —</p>
+        <a class="button" href="#" onclick="showAboutMe()">About Me</a>
+        <a class="button" href="#" onclick="showProjects()">Projects</a>
+        <a class="button" href="http://briannaleung.github.io/May2018.pdf">Resume</a>
+    </div>
+		<div id="body">
 			<div id="aboutMe">
-				<h3>About Me</h3>
-				<p>Hello, I am a 1B Electrical Engineering student from the University of Waterloo. I was born and raised in Scarborough, Ontario. I just finished my first co-op term and I couldn't be more excited for the next:) Check out my projects to see what I have been working on lately!</p>
+				<p>Hello, I am a 1B Electrical Engineering student from the University of Waterloo. I was born and raised in Scarborough, Ontario. I just finished my first co-op term at OpenText and I couldn't be more excited for the next:) Check out my projects to see what I have been working on lately!</p>
 			</div>
 
-			<div id="projects">
-				<h3>Projects</h3>
-				<span class="cards">
-					<div class="card" style="width:300px">
-						<img id="Marmosad" class="card-img-top" src="marmosadduck.svg" alt="Card image" style="width:100%; height: 300px">
-						<div class="card-body">
-							<h3 class="card-title"><small>Marmosad</small></h3>
-						    <p class="card-text">Marmosad is a version of Cards Against Humanity created by a team of students.</p>
-						    <div class="card-button">
-						    	<a href="http://marmosad.me" class="button">Try it out!</a>
-						  </div>
-					    </div>
-					</div>
-
-					<div class="card" style="width:300px">
-						<img id="Marmosad" class="card-img-top" src="website.png" alt="Card image" style="width:100%; height: 300px">
-						<div class="card-body">
-						    <h3 class="card-title"><small>My Website</small></h3>
-						    <p class="card-text">I created this personal website with HTML, CSS and a lil bit of js for jokes ya know? heheh hahahahah h</p>
-						    <div class="card-button">
-						    	<a href="https://briannaleung.github.io/" class="button">Try it out!</a>
-					    	</div>
-					   	</div>
-					</div>
-				</span>
-			</div>
-<!--
-			<div id="shows">
-				<h3>TV Shows & Movies</h3>
-
-				<div class="cards">
-					<div class="card" style="width:300px">
-						<img id="Marmosad" class="card-img-top" src="gameofthrones.jpg" alt="Card image" style="width:100%; height: 300px">
-						<div class="card-body">
-							<h4 class="card-title">Game of Thrones</h4>
-							<div class="card-button">
-								 <a href="https://www.hbo.com/game-of-thrones" class="button">More Info</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="card" style="width:300px">
-						<img id="Marmosad" class="card-img-top" src="greysanatomy.jpg" alt="Card image" style="width:100%; height: 300px">
-						<div class="card-body">
-							<h4 class="card-title">Grey's Anatomy</h4>
-							<div class="card-button">
-								 <a href="https://www.ctv.ca/Greys-Anatomy" class="button">More Info</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		-->
-			
-			<div id="extra">
-				<h3>Some Extra Tings</h3>
-				<p>
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-
-					Key people involved later include Tom Jenkins, who joined the company as COO in 1994. Tom Jenkins later became President and Chief Executive Officer,[9] and has been Executive Chairman since 2013. John Shackleton served as President from 1998–2011, and as CEO from 2005 - 2011. Mark Barrenechea has been President and CEO of OpenText since 2012.[10] Mark Barrenechea was named Canadian Business CEO of the year in 2015.[11] From January 2016, Steve Murphy served as the President,[12] however the position was made redundant in 2017 Q1.[13]
-
-					OpenText is a supporter of the University of Waterloo Stratford Campus, contributing both funds and in-kind services to the school.[14]
-
-					In August 2016, OpenText was recognised by the consulting firm PWC as being number 1 in their "Fastest Growing Cloud Companies" report[15]
-
-					On September 12, 2016, OpenText, acquired Dell EMC's ECD division—which included Documentum, an enterprise content management suite—for $1.6B USD.[16]
-
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-					OpenText Corporation was founded in 1991 by University of Waterloo professors Frank Tompa, Timothy Bray, and Gaston Gonnet.[7] It was a successor to OpenText Systems Inc., founded in 1989. The company was spun off from a University of Waterloo project that developed technology to index the Oxford English Dictionary.[8]
-
-				</p>
-
-				<br>
-				<p>I wanna put something here but idk what</p>
-				<a class="button" href="http://google.ca">clicky me</a>
-			</div>
-
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<a id= "back" class="backToTop" href="#header">&#x2191 Back to Top</a>
-			
-		</div>
+            <div id="projects">
+                <h3>Marmosad</h3>
+                <p id="subtitle">A card game based on Cards Against Humanity created by a team of students. <br> Click the button below to try it out!</p>
+                <a class="button" href="http://marmosad.me/">Try it out</a>
+            </div>
+        </div>
 
 		<div id="footer">
 			<small>
-				Here are some other coop friends:
+				Find me here:
 				<br><br>
 
 				<div id="footerLinks">
-					<a class="footerLinks" href="http://matthewsun.ca">Matthew Sun</a>
-					<a class="footerLinks" href="http://matthewsun.ca/images/profile.png"> Matthew+ </a>
-					<a class="footerLinks" href="https://www.instagram.com/calvinncheung/?hl=en">Calvin Cheung</a>
-					<a class="footerLinks" href="https://setoville.github.io">Setoville</a>
+					<a class="footerLinks" href="https://github.com/briannaleung">GitHub</a>
+					<a class="footerLinks" href="https://ca.linkedin.com/in/brianna-leung-8a517214b">LinkedIn</a>
 				</div>
-			</small><br>
+			</small>
 		</div>
 
 
