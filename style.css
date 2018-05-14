@@ -5,14 +5,13 @@ body{
 	text-align: center;
 	font-family: 'Raleway', cursive;
 	overflow: hidden;
-	background-color: white;
 	position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px solid grey;
-  margin: 10px;
+	border: 0.1vw solid black;
+	margin: 1vw;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 @-webkit-keyframes fadein {
@@ -138,5 +137,15 @@ a.footerLinks:link, a.footerLinks:visited{
 a.title:hover, a.footerLinks:hover {
 	transition-duration: 0.3s;
 	color: pink;
+}
+
+canvas{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	width: 100%;
+  	z-index: -100;
 }
 

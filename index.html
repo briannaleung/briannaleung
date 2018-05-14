@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+        <script src='js/ymlarg.js'></script>
+    <script src='https://rawgit.com/juliangarnier/anime/master/anime.min.js'></script>
 	</head>
-	<script type="text/javascript">
+    <script>
         function showAboutMe(){
             document.getElementById("aboutMe").style.display = "block";
             if(document.getElementById("projects").style.display = "block"){
@@ -17,12 +19,12 @@
                 document.getElementById("aboutMe").style.display = "none";
             }
         }
-	</script>
-
+    </script>
 	<title>Brianna</title>
 	<link rel="shortcut icon" href="http://www.pngmart.com/files/1/Banana-Icon-PNG.png" />
 
 	<body>
+
     <div id="header">
         <h1><a class="title">Brianna Leung</a></h1>
         <p id="subtitle">— A 1B Electrical Engineering student looking for some experience —</p>
@@ -52,5 +54,8 @@
                 </small>
 				</div>
 		</div>
+    <canvas class="fireworks"></canvas>
+    <script type="text/javascript" src="script.js"></script>
+
 	</body>
 </html>
