@@ -71,7 +71,6 @@ h1::selection, h3::selection, p::selection{
 
 #subtitle{
 	text-align: center;
-	padding-bottom: 1vw;
 	color: grey;
 }
 
