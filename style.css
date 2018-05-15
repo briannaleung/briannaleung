@@ -100,8 +100,8 @@ a.title, a.title:link, a.title:visited{
 }
 
 a.button:link, a.button:visited {
-    color: pink;
-    border: 2px solid pink;
+    color: #a8a8a8;
+    border: 2px solid #a8a8a8;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -119,9 +119,9 @@ a.button:link, a.button:visited {
 
 
 a.button:hover, a.button:active {
-   border: 2px solid #a8a8a8;
+   border: 2px solid pink;
    padding: 10px 20px;
-   color: #a8a8a8;
+   color: pink;
 }
 
 
@@ -156,4 +156,6 @@ canvas{
 img{
 	width: 30px;
 }
+
+
 

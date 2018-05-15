@@ -2,11 +2,11 @@ window.human = false;
 
 var canvasEl = document.querySelector('.fireworks');
 var ctx = canvasEl.getContext('2d');
-var numberOfParticules = 30;
+var numberOfParticules = 10;
 var pointerX = 0;
 var pointerY = 0;
 var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
-var colors = ['grey', 'black', '#b8b9ba', 'pink'];
+var colors = ['grey','pink'];
 
 function setCanvasSize() {
   canvasEl.width = window.innerWidth * 2;
@@ -36,7 +36,7 @@ function createParticule(x,y) {
   p.x = x;
   p.y = y;
   p.color = colors[anime.random(0, colors.length - 1)];
-  p.radius = anime.random(16, 32);
+  p.radius = anime.random(10, 12);
   p.endPos = setParticuleDirection(p);
   p.draw = function() {
     ctx.beginPath();
