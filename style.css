@@ -48,7 +48,7 @@ h1::selection, h3::selection, p::selection{
 
 #header{
 	position: fixed;
-	top: 20%;
+	top: 10%;
 	width: 100%;
 }
 
