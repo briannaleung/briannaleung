@@ -56,13 +56,14 @@ h1::selection, h3::selection, p::selection{
 	-webkit-animation: fadein 3s;
 	position: fixed;
 	width: 50%;
-	top: 55%;
+	bottom: 20%;
 	left:0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 100%;
 	display: none;
+	z-index: -50;
 }
 
 #aboutMe{
