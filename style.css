@@ -76,7 +76,6 @@ h1::selection, h3::selection, p::selection{
 }
 
 #footer{
-	border-top: 0.1vw solid black;
 	margin: 0 auto;
 	padding-top: 0.5vw;
 	padding-bottom: 1.5vw;
@@ -127,7 +126,6 @@ a.button:hover, a.button:active {
 
 
 a.footerLinks:link, a.footerLinks:visited{
-	color:#a8a8a8;
 	text-decoration:none;
 	padding: 2vw;
 	padding-top: 1vw;
